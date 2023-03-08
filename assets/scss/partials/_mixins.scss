@@ -11,7 +11,8 @@
 }
 
 @mixin grid($nRow){
-    display: grid;
-    grid-template-columns: repeat($nRow, 1fr);
-    grid-gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }

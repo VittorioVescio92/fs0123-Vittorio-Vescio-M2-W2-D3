@@ -9,6 +9,9 @@
 header{
     background-color: $bg_header;
     nav{
+        background-color: yellow;
+        display: flex;
+        justify-content: space-between;
         img{
         }
         ul{
@@ -18,22 +21,26 @@ header{
         }
     }
     .container-1{
-        @include fadeIn(fadeIn, 1s, forwards, 0.2s);
         .container-2{
-            @include fadeIn(fadeIn, 1s, forwards, 0.7s);
             img{
                 @include floating (15px, 0 10px 20px, 2px solid lightblue);
-                @include fadeIn(fadeIn, 1s, forwards, 0.7s);
+                @include fadeIn(fadeIn, 1s, forwards, 0.3s);
             }
             p{
-
+                @include fadeIn(fadeIn, 1s, forwards, 1s);
             }
         }
         .buttons{
             button{
-                @include fadeIn(fadeIn, 1s, forwards, 1.3s);
+                @include fadeIn(fadeIn, 1s, forwards, 1s);
             }
         }
     }
 }
-
+.cards{
+    @include fadeIn(fadeIn, 1s, forwards, 1s);
+    @include grid (2);
+    .card{
+width: 50%;
+    }
+}
