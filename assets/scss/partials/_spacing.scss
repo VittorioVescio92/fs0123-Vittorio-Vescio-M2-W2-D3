@@ -1,0 +1,37 @@
+$p: ( 
+    block, 
+    inline
+);
+
+$dimensions: (
+sm: 5px,
+normal: 10px,
+md: 15px,
+lg: 20px,
+xl: 25px,
+xxl: 30px
+);
+
+  @each $key, $value in $dimensions {
+    .padding-inline-#{$key} {
+      padding-inline: $value;
+    }
+  }
+  
+  @each $key, $value in $dimensions {
+    .padding-block-#{$key} {
+      padding-block: $value;
+    }
+  }
+
+  @each $key, $value in $dimensions {
+    .margin-inline-#{$key} {
+      margin-inline: $value;
+    }
+  }
+  
+  @each $key, $value in $dimensions {
+    .margin-block-#{$key} {
+      margin-block: $value;
+    }
+  }

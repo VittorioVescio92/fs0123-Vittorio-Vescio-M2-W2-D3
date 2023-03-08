@@ -1,0 +1,17 @@
+@mixin title-big (){
+    font-size: $fs-xl;
+    font-weight: bold;
+    font-family: $font;
+}
+
+@mixin floating ($border-radius:10px, $box-shadow: 0 10px 20px, $border: none){
+    border-radius: $border-radius;
+    border: $border;
+    box-shadow: $box-shadow;
+}
+
+@mixin grid($nRow){
+    display: grid;
+    grid-template-columns: repeat($nRow, 1fr);
+    grid-gap: 0.5rem;
+}

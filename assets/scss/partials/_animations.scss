@@ -1,0 +1,6 @@
+@mixin fadeIn ( $name, $duration: 3s, $end:forwards, $delay: 0.5s) {
+    opacity: 0;
+    animation: $name $duration $end;
+   animation-delay: $delay;
+}
+

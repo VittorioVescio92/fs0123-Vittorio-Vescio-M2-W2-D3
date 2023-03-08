@@ -1,0 +1,47 @@
+@import "partials/resets";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/spacing";
+@import "partials/buttons";
+@import "partials/mixins";
+@import "partials/animations";
+
+header{
+    nav{
+        background-color: $bg_header;
+        img{
+        }
+        ul{
+            li{
+
+            }
+        }
+    }
+    .container-1{
+        @include fadeIn(fadeIn, 1s, forwards, 0.2s);
+        .container-2{
+            @include fadeIn(fadeIn, 1s, forwards, 0.5s);
+            img{
+                @include floating (15px, 0 10px 20px, 2px solid lightblue);
+                @include fadeIn(fadeIn, 1s, forwards, 0.5s);
+            }
+            p{
+
+            }
+        }
+        .buttons{
+            button{
+                @include fadeIn(fadeIn, 1s, forwards, 1s);
+            }
+        }
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
