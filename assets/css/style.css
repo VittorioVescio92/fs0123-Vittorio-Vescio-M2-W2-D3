@@ -179,7 +179,7 @@ body {
   transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out, border 0.3s ease-in-out;
 }
 
-header nav {
+header {
   background-color: #640fc5;
 }
 header .container-1 {
@@ -190,7 +190,7 @@ header .container-1 {
 header .container-1 .container-2 {
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 header .container-1 .container-2 img {
   border-radius: 15px;
@@ -198,12 +198,12 @@ header .container-1 .container-2 img {
   box-shadow: 0 10px 20px;
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 header .container-1 .buttons button {
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 1s;
+  animation-delay: 1.3s;
 }
 
 @keyframes fadeIn {
