@@ -1,6 +1,17 @@
 @mixin fadeIn ( $name, $duration: 3s, $end:forwards, $delay: 0.5s) {
     opacity: 0;
+    transform: translateY(0);
     animation: $name $duration $end;
    animation-delay: $delay;
 }
 
+@keyframes #{$name}{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
