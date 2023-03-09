@@ -197,6 +197,15 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
+header nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  width: 33%;
+}
 header .container-1 .container-2 img {
   border-radius: 15px;
   border: 2px solid lightblue;

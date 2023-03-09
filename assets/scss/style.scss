@@ -15,8 +15,12 @@ header{
         img{
         }
         ul{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             li{
-
+                width: 33%;
             }
         }
     }
