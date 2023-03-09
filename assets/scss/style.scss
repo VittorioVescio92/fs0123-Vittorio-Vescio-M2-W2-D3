@@ -24,21 +24,21 @@ header{
         .container-2{
             img{
                 @include floating (15px, 0 10px 20px, 2px solid lightblue);
-                @include fadeIn(fadeIn, 1s, forwards, 0.3s);
+                @include fadeIn(fadeIn, 1s, 0.3s);
             }
             p{
-                @include fadeIn(fadeIn, 1s, forwards, 1s);
+              @include fadeIn(fadeIn, 1s, 0.3s);
             }
         }
         .buttons{
             button{
-                @include fadeIn(fadeIn, 1s, forwards, 1s);
+              @include fadeIn(fadeIn, 1s, 0.3s);
             }
         }
     }
 }
 .cards{
-    @include fadeIn(fadeIn, 1s, forwards, 1s);
+  @include fadeIn(fadeIn, 1s, 0.3s);
     @include grid (2);
     .card{
 width: 50%;
