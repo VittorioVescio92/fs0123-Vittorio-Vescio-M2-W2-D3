@@ -59,7 +59,7 @@ header {
 
 .cards {
   @include fadeIn(fadeIn, 1s, 0.3s);
-  @include grid;
+  @include grid (4);
   .card {
   }
 }

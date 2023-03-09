@@ -10,9 +10,15 @@
     box-shadow: $box-shadow;
 }
 
-@mixin grid(){
+@mixin grid($n){
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 0.5rem;
+
+& > * {
+    width: calc(95/$n*1%);
+}
 }
