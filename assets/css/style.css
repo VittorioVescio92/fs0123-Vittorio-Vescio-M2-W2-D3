@@ -269,4 +269,8 @@ header .container-1 .buttons button {
 }
 .cards > * {
   width: 23.75%;
+}
+.cards .card {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

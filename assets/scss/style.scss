@@ -61,5 +61,7 @@ header {
   @include fadeIn(fadeIn, 1s, 0.3s);
   @include grid (4);
   .card {
+    display: flex;
+    justify-content: center;
   }
 }
