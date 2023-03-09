@@ -39,8 +39,7 @@ header{
 }
 .cards{
   @include fadeIn(fadeIn, 1s, 0.3s);
-    @include grid (2);
+    @include grid;
     .card{
-width: 50%;
     }
 }
