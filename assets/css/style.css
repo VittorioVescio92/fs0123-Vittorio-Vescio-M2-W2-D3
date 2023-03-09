@@ -193,9 +193,12 @@ header {
   background-color: #640fc5;
 }
 header nav {
-  background-color: yellow;
+  background-color: rgba(248, 248, 0, 0.901);
   display: flex;
   justify-content: space-between;
+}
+header nav img {
+  margin-left: 2.5rem;
 }
 header nav ul {
   width: 50%;
@@ -208,8 +211,8 @@ header nav ul li {
 }
 header .container-1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  margin-inline: 3rem;
 }
 header .container-1 .container-2 {
   padding-block: 2rem;
@@ -224,12 +227,24 @@ header .container-1 .container-2 img {
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
 }
-header .container-1 .container-2 p {
+header .container-1 .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .container-1 .text p {
   opacity: 0;
   transform: translateY(0);
   animation: FadeIn 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Arial;
+  padding-block: 1rem;
+  text-align: center;
+  color: white;
 }
 header .container-1 .buttons button {
   opacity: 0;

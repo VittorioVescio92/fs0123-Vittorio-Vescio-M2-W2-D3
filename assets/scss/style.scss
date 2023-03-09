@@ -6,48 +6,60 @@
 @import "partials/mixins";
 @import "partials/animations";
 
-header{
-    background-color: $bg_header;
-    nav{
-        background-color: yellow;
-        display: flex;
-        justify-content: space-between;
-        img{
-        }
-        ul{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            li{
-                width: 33%;
-            }
-        }
+header {
+  background-color: $bg_header;
+  nav {
+    background-color: rgba(248, 248, 0, 0.901);
+    display: flex;
+    justify-content: space-between;
+    img {
+        margin-left: 2.5rem;
     }
-    .container-1{
-        display: flex;
-                flex-direction: column;
-                align-items: center;
-        .container-2{
-                padding-block: 2rem;
-            img{
-                @include floating (15px, 0 10px 20px, 2px solid lightblue);
-                @include fadeIn(fadeIn, 1s, 0.3s);
-            }
-            p{
-              @include fadeIn(fadeIn, 1s, 0.3s);
-            }
-        }
-        .buttons{
-            button{
-              @include fadeIn(fadeIn, 1s, 0.3s);
-            }
-        }
+    ul {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        width: 33%;
+      }
     }
+  }
+  .container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 3rem;
+    .container-2 {
+      padding-block: 2rem;
+      img {
+        @include floating(15px, 0 10px 20px, 2px solid lightblue);
+        @include fadeIn(fadeIn, 1s, 0.3s);
+      }
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      p {
+        @include fadeIn(fadeIn, 1s, 0.3s);
+        @include title-big;
+        padding-block: 1rem;
+        text-align: center;
+        color: white;
+      }
+    }
+    .buttons {
+      button {
+        @include fadeIn(fadeIn, 1s, 0.3s);
+      }
+    }
+  }
 }
-.cards{
+
+.cards {
   @include fadeIn(fadeIn, 1s, 0.3s);
-    @include grid;
-    .card{
-    }
+  @include grid;
+  .card {
+  }
 }
