@@ -25,7 +25,11 @@ header{
         }
     }
     .container-1{
+        display: flex;
+                flex-direction: column;
+                align-items: center;
         .container-2{
+                padding-block: 2rem;
             img{
                 @include floating (15px, 0 10px 20px, 2px solid lightblue);
                 @include fadeIn(fadeIn, 1s, 0.3s);
